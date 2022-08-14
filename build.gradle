@@ -15,6 +15,16 @@ repositories {
 		name "Parchment"
 		url "https://maven.parchmentmc.org"
 	}
+
+    maven {
+        name "MidnightLib"
+        url "https://api.modrinth.com/maven"
+    }
+
+    maven {
+        name "Modmenu"
+        url "https://maven.terraformersmc.com/"
+    }
 }
 
 dependencies {
@@ -26,6 +36,15 @@ dependencies {
 	mappings loom.layered() {
 		officialMojangMappings()
 	}
+
+    //MidnightLib
+    modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
+    include "maven.modrinth:midnightlib:${project.midnightlib_version}"
+
+    //Modmenu
+    modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}") {
+        exclude group: "net.fabricmc.fabric-api"
+    }
 }
 
 processResources {

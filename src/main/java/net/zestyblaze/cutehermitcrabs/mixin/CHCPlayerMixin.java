@@ -8,6 +8,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.zestyblaze.cutehermitcrabs.config.CHCConfig;
 import net.zestyblaze.cutehermitcrabs.registry.CHCItemsRegistry;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -26,7 +27,7 @@ public abstract class CHCPlayerMixin extends LivingEntity {
             Player player = (Player)(Object)this;
             if(player.getItemBySlot(EquipmentSlot.HEAD).getItem() == CHCItemsRegistry.HERMIT_CRAB_SHELL) {
                 if(player.isShiftKeyDown()) {
-                    player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 10, 2, false, false, true));
+                    player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 10, CHCConfig.resistanceLevel - 1, false, false, true));
                 }
             }
         }
