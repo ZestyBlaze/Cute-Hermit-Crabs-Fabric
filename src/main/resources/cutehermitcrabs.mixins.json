@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.zestyblaze.cutehermitcrabs.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CHCPlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
