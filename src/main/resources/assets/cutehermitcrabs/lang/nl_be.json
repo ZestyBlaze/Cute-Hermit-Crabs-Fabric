@@ -14,5 +14,11 @@
 
   "sounds.cutehermitcrabs.hermit_crab_hurt": "Heremietkrab raakt gewond",
 
-  "entity.cutehermitcrabs.hermit_crab": "Heremietkrab"
+  "entity.cutehermitcrabs.hermit_crab": "Heremietkrab",
+
+  "cutehermitcrabs.midnightconfig.title": "Cute Hermit Crabs",
+  "cutehermitcrabs.midnightconfig.resistanceLevel": "Weerstandsniveau Heremietkrabben Schelp",
+  "cutehermitcrabs.midnightconfig.spawnWeight": "Spawn Frequentie Heremietkrab",
+  "cutehermitcrabs.midnightconfig.minGroupSize": "Minimale Groepsgrootte Heremietkrab",
+  "cutehermitcrabs.midnightconfig.maxGroupSize": "Maximale Groepsgrootte Heremietkrab"
 }
