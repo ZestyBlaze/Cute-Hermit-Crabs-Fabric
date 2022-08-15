@@ -14,5 +14,11 @@
 
   "sounds.cutehermitcrabs.hermit_crab_hurt": "Hermit Crab hurts",
 
-  "entity.cutehermitcrabs.hermit_crab": "Hermit Crab"
+  "entity.cutehermitcrabs.hermit_crab": "Hermit Crab",
+
+  "cutehermitcrabs.midnightconfig.title": "Cute Hermit Crabs",
+  "cutehermitcrabs.midnightconfig.resistanceLevel": "Hermit Shell Resistance Level",
+  "cutehermitcrabs.midnightconfig.spawnWeight": "Hermit Crab Spawn Weight",
+  "cutehermitcrabs.midnightconfig.minGroupSize": "Hermit Crab Min Group Size",
+  "cutehermitcrabs.midnightconfig.maxGroupSize": "Hermit Crab Max Group Size"
 }

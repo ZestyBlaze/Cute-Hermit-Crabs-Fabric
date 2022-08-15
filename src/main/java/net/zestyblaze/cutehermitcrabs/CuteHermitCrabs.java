@@ -1,10 +1,12 @@
 package net.zestyblaze.cutehermitcrabs;
 
+import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.zestyblaze.cutehermitcrabs.config.CHCConfig;
 import net.zestyblaze.cutehermitcrabs.registry.CHCEntityRegistry;
 import net.zestyblaze.cutehermitcrabs.registry.CHCItemsRegistry;
 import net.zestyblaze.cutehermitcrabs.registry.CHCSoundRegistry;
@@ -16,6 +18,7 @@ public class CuteHermitCrabs implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		MidnightConfig.init(MOD_ID, CHCConfig.class);
 		CHCSoundRegistry.registerSounds();
 		CHCEntityRegistry.registerEntities();
 		CHCItemsRegistry.registerItems();

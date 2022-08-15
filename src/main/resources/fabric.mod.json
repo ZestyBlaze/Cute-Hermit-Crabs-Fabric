@@ -25,6 +25,9 @@
     ],
     "client": [
       "net.zestyblaze.cutehermitcrabs.client.CHCClient"
+    ],
+    "modmenu": [
+      "net.zestyblaze.cutehermitcrabs.integration.ModMenu"
     ]
   },
 
